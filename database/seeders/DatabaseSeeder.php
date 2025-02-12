@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Specialist;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,5 +20,19 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        Specialist::create([
+            'name' => 'Dokter Umum',
+        ]);
+
+        Specialist::create([
+            'name' => 'Dokter Gigi',
+        ]);
+
+        Specialist::create([
+            'name' => 'Dokter Kandungan',
+        ]);
     }
+
+
 }
